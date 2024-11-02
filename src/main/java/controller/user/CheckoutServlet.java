@@ -41,7 +41,7 @@ public class CheckoutServlet extends HttpServlet {
         ShopOrder shopOrder = shopOrderDao.getLatestOrderByUserId(u.getUserID());
         AddressDAO addressDao = new AddressDAO();
         Address oldAddress = null;
-        if (shopOrder != null) {
+        if (shopOrder != null) { //afaf
             oldAddress = addressDao.getAddressById(shopOrder.getAddressID());
         }
         if (u == null) {

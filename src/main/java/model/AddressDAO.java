@@ -24,7 +24,7 @@ public class AddressDAO extends myDAO {
             System.out.println("insertAddress: " + e.getMessage());
         }
     }
-
+//ads
     public int addNewAddress(String addressLine, String city, String postalCode, String countryID, int userId, String phone, String fullname) {
         int xCountryID = Integer.parseInt(countryID);
         xSql = "INSERT INTO address (addressline, city, postalcode, CountryID, phone, fullname) VALUES (?, ?, ?, ?, ?, ?);";
